@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int jam;
+    int no;
+    char nama[100];
+    int total;
+    long diskon;
+
+    cout<<"No Komputer: ";
+    cin>>no;
+    cout<<"Nama Pemakai: ";
+    cin>>nama;
+    cout<<"Lama Pakai: ";
+    cin>>jam;
+
+    total=jam*4000;
+
+    if(jam>5){
+        diskon=0.1*total;
+        total=total-diskon;
+    }
+
+    system("cls");
+
+    cout<<"Rincian Tagihan Warnet"<<endl;
+
+    cout<<"No Komputer: "<<no<<endl;
+    cout<<"Nama Pemakai: "<<nama<<endl;
+    cout<<"Lama Pakai: "<<jam<<endl;
+    cout<<"Total Tagihan: "<<total<<endl;
+
+
+    return 0;
+}
+
